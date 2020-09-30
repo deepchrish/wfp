@@ -8,6 +8,8 @@ html {
 }
 
 body {
+    font-family: 'Roboto',
+        sans-serif;
     overflow-x: hidden;
 }
 
@@ -20,10 +22,12 @@ h2 {
     font-size: 40px;
     color: #171717;
 }
-p{
+
+p {
     font-size: 16px;
     color: #171717;
 }
+
 .txt-white {
     color: #ffffff;
 }
@@ -133,6 +137,47 @@ p{
     /* display: none; */
 }
 
+.wfp-multiselect .btn-group {
+    width: 100%;
+}
+
+.wfp-multiselect .btn-group {
+    border: 1px solid #ced4da;
+    border-radius: 3px;
+    cursor: pointer;
+}
+.wfp-multiselect .btn-group button{
+    text-align: left;
+        overflow: hidden;
+        text-overflow: ellipsis;
+}
+.wfp-multiselect .multiselect-container>li:hover{
+    background: #0164500F;
+}
+.wfp-multiselect .dropdown-menu{
+        width: 100%;
+}
+.wfp-multiselect .multiselect-container>li>a{
+    display: block;
+    text-decoration: none;
+    font-size: 14px;
+}
+.wfp-multiselect .multiselect-container>li>a:focus,
+.wfp-multiselect .multiselect-container>li>a>label:focus{
+    outline: none;
+}
+.wfp-multiselect .multiselect-container>li>a>label{
+    display: block;
+        padding: 5px 10px 5px 15px;
+}
+.wfp-multiselect .dropdown-toggle::after{
+    content: "\F0140";
+    font-family: "Material Design Icons";
+    border: none;
+    vertical-align: bottom;
+    position: absolute;
+    right: 3px;
+}
 /* Search & filters END*/
 
 /* Video sec */
@@ -610,6 +655,8 @@ p{
 
 .wfp-slider-cards .card-text ul {
     list-style: none;
+    display: flex;
+    justify-content: space-between;
 }
 
 .wfp-slider-cards .card-text ul li {
@@ -1505,23 +1552,28 @@ body.compensate-for-scrollbar {
     margin: 0 auto;
     font-size: 32px;
 }
-.wfp-home-icon{
+
+.wfp-home-icon {
     background: #01645026;
     color: #216450;
 }
-.wfp-usd-icon{
+
+.wfp-usd-icon {
     background: #1AB7E526;
     color: #4fb7e5;
 }
-.wfp-magnify{
+
+.wfp-magnify {
     background: #F8A36126;
     color: #f4a361;
 }
-.wfp-opt-txt p{
+
+.wfp-opt-txt p {
     overflow: hidden;
     max-height: 100px;
     text-overflow: ellipsis;
 }
+
 /* Who We Are END*/
 
 /* Our Mission START*/
@@ -1530,24 +1582,30 @@ body.compensate-for-scrollbar {
     z-index: -1;
     position: relative;
 }
+
 .our-misison-left img {
     margin: 25px 0;
     z-index: -1;
 }
+
 .our-misison-right p {
     padding-left: 15%;
 }
+
 /* Our Mission END*/
 
 /* Owners section START*/
 .slick-slider {
     width: 100%;
 }
-.slick-initialized .slick-slide {
+
+.whk-owners .slick-initialized .slick-slide,
+.whk-tenants .slick-initialized .slick-slide {
     position: relative;
     margin: 8px;
     text-align: center;
 }
+
 .slick-ttl {
     position: absolute;
     top: 0;
@@ -1563,21 +1621,26 @@ body.compensate-for-scrollbar {
     font-size: 24px;
     font-weight: 400;
 }
+
 .whk-owners .slick-slide img,
 .whk-tenants .slick-slide img {
     min-height: 360px;
     object-fit: cover;
 }
+
 .whk-owners .slick-slide.slick-current.slick-active.slick-center img,
 .whk-tenants .slick-slide.slick-current.slick-active.slick-center img {
-    min-height: 420px;
+    /* min-height: 420px; */
+    zoom: 120%;
 }
+
 .whk-owners .slick-track,
-.whk-tenants .slick-track{
+.whk-tenants .slick-track {
     display: flex;
     align-items: center;
 }
-/* Owners section END*/ 
+
+/* Owners section END*/
 
 /* Testimonials section START*/
 .item-img img {
@@ -1585,10 +1648,12 @@ body.compensate-for-scrollbar {
     max-width: 10% !important;
     margin: 0 auto !important;
 }
+
 .carousel-inner {
     box-shadow: 0px 2px 16px #01645024;
     background: #FFFFFF 0% 0% no-repeat padding-box;
 }
+
 .item-content p {
     width: 100%;
     max-width: 63%;
@@ -1597,31 +1662,38 @@ body.compensate-for-scrollbar {
     text-align: center;
     font-size: 18px !important;
 }
+
 /* Testimonials section END*/
 
 /* Footer css START*/
 #whk-footer {
     padding: 15px 0;
 }
+
 .footer-content ul {
     padding-left: 0;
 }
+
 .footer-content ul li {
     list-style: none;
     display: inline-block;
     font-size: 16px !important;
 }
+
 .wkh-footer-icon img {
     width: 100%;
     max-width: 65%;
 }
+
 .whk-footer-logo img {
     max-width: 47%;
 }
+
 .whk-footer-ttl {
     font-size: 18px;
     font-weight: 600;
 }
+
 .whk-footer-2 ul li,
 .whk-footer-3 ul li,
 .whk-footer-4 ul li,
@@ -1632,39 +1704,234 @@ body.compensate-for-scrollbar {
     margin-bottom: 15px;
     margin-top: 15px;
 }
+
 .whk-footer-2 ul,
 .whk-footer-3 ul,
 .whk-footer-4 ul,
 .whk-footer-5 ul {
     padding-left: 0;
 }
+
 .whk-social-bar ul {
     padding-left: 0;
 }
+
 .whk-social-bar ul li {
     list-style: none;
     display: inline-block;
 }
+
 .whk-footer-copyright {
     text-align: right;
     font-size: 14px;
     color: #016450;
     line-height: 24px;
 }
+
 .wkh-fb-icon {
     margin-right: 12px;
 }
+
 .wkh-fb-icon img {
     width: 100%;
     max-width: 51%;
 }
+
 .wkh-twitter-icon img {
     width: 100%;
     max-width: 57%;
     margin-top: 5px;
 }
+
 .wkh-linkedin-icon img {
     width: 100%;
     max-width: 52%;
 }
+
 /* Footer css END*/
+
+/* Vacancies css START*/
+.whk-banner {
+    padding: 60px 0;
+    background: linear-gradient(45deg, black, transparent);
+    background-image: linear-gradient(180deg, rgb(60 60 60 / 92%), rgb(49 49 49 / 69%)), url(../img/California-modern-home.png);
+    /* min-height: 540px; */
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+}
+
+.whk-banner-ttl {
+    font-size: 60px;
+    font-weight: 700;
+    color: #ffffff;
+}
+
+.whk-subttl {
+    color: #ffffff;
+    font-size: 16px;
+}
+
+.main {
+    width: 50%;
+    margin: 50px auto;
+}
+
+/* Bootstrap 4 text input with search icon */
+
+.has-search .form-control {
+    padding-left: 2.375rem;
+}
+
+.has-search .form-control-feedback {
+    position: absolute;
+    z-index: 2;
+    display: block;
+    width: 2.375rem;
+    height: 2.375rem;
+    line-height: 2.375rem;
+    text-align: center;
+    pointer-events: none;
+    color: #aaa;
+}
+
+.whk-form-outer-wrapper {
+    width: 100%;
+    max-width: 44%;
+    margin: 0 auto;
+    background: #ffffffa8;
+    padding: 26px 35px;
+    border-radius: 5px;
+    margin-top: 45px;
+    margin-bottom: 10px;
+}
+
+#whk-search-form .input-group,
+#whk-search-form .input-group input.form-control {
+    height: 45px;
+}
+
+.whk-search-btn {
+    background: #016450;
+}
+
+.whk-search-btn i {
+    font-size: 20px;
+}
+
+.whk-search-wrapper {
+    top: -36px !important;
+}
+
+.wfp-vac-right-side {
+    max-height: 740px;
+    overflow-y: scroll;
+}
+
+.wfp-refresh {
+    font-size: 24px;
+    color: #171717;
+}
+
+.wfp-vac-right-side::-webkit-scrollbar {
+    width: 3px;
+}
+
+/* Track */
+.wfp-vac-right-side::-webkit-scrollbar-track {
+    background: #f1f1f1;
+}
+
+/* Handle */
+.wfp-vac-right-side::-webkit-scrollbar-thumb {
+    background: #888;
+}
+
+/* Handle on hover */
+.wfp-vac-right-side::-webkit-scrollbar-thumb:hover {
+    background: #555;
+}
+
+/* ------------------ listing detail Page css START --------------------*/
+.wfp-detail-head h1 {
+    font-size: 28px;
+    font-weight: 400;
+}
+
+.wfp-detail-head p {
+    color: #A7A7A7;
+}
+
+.wfp-detail-head p i {
+    font-size: 20px;
+}
+
+.wfp-de-left-img {
+    height: 100%;
+    object-fit: cover;
+}
+
+.wfp-de-right-img img {
+    width: 100%;
+    object-fit: cover;
+    max-height: 250px;
+}
+
+.wfp-detail-head img {
+    transition: .2s ease-in-out;
+    opacity: 1;
+    filter: brightness(0.8);
+}
+
+.wfp-detail-head img:hover {
+    /*   */
+    filter: brightness(1);
+}
+
+.wfp-detail-head .row .px-0 {
+    border: 0.1px solid #fff;
+}
+
+.wfp-flot-img-icon {
+    background: rgb(0, 0, 0, 0.39);
+    display: inline;
+    color: #fff;
+    position: absolute;
+    z-index: 1;
+    left: 0;
+    top: 0;
+    margin: 10px;
+    padding: 2px 12px;
+    border-radius: 3px;
+}
+
+/* nav tabs information START */
+.nav-tabs.wfp-nav-tabs .nav-link {
+    border-radius: 0;
+    border: 1px solid #fff;
+    background: #505050;
+    color: #ffffff;
+
+}
+
+.nav-tabs.wfp-nav-tabs .nav-item.show .nav-link,
+.nav-tabs.wfp-nav-tabs .nav-link.active {
+    background: #0164501A;
+    color: #171717;
+}
+
+/* nav tabs information END */
+/* ------------------ listing detail Page css END --------------------*/
+
+
+
+/* Media Query START */
+@media (max-width: 767px) {
+    .wfp-de-left-img {
+        height: auto;
+    }
+
+    .wfp-de-right-img img {
+        max-height: unset;
+    }
+}
