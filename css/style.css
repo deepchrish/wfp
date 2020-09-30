@@ -34,6 +34,7 @@ p {
 
 .wfp-btn-primary {
     background: #016450;
+    border: 1px solid #016450;
     color: #fff;
     border-radius: 3px;
     transition: all 0.3s ease;
@@ -42,6 +43,19 @@ p {
 .wfp-btn-primary:hover {
     background: #023e32;
     color: #fff;
+}
+
+.wfp-btn-outline {
+    background: #fff;
+    border: 1px solid #016450;
+    color: #016450;
+    border-radius: 3px;
+    transition: all 0.3s ease;
+}
+
+.wfp-btn-outline:hover {
+    background: #0164501A;
+    color: #016450;
 }
 
 /* navigation start */
@@ -146,31 +160,38 @@ p {
     border-radius: 3px;
     cursor: pointer;
 }
-.wfp-multiselect .btn-group button{
+
+.wfp-multiselect .btn-group button {
     text-align: left;
-        overflow: hidden;
-        text-overflow: ellipsis;
+    overflow: hidden;
+    text-overflow: ellipsis;
 }
-.wfp-multiselect .multiselect-container>li:hover{
+
+.wfp-multiselect .multiselect-container>li:hover {
     background: #0164500F;
 }
-.wfp-multiselect .dropdown-menu{
-        width: 100%;
+
+.wfp-multiselect .dropdown-menu {
+    width: 100%;
 }
-.wfp-multiselect .multiselect-container>li>a{
+
+.wfp-multiselect .multiselect-container>li>a {
     display: block;
     text-decoration: none;
     font-size: 14px;
 }
+
 .wfp-multiselect .multiselect-container>li>a:focus,
-.wfp-multiselect .multiselect-container>li>a>label:focus{
+.wfp-multiselect .multiselect-container>li>a>label:focus {
     outline: none;
 }
-.wfp-multiselect .multiselect-container>li>a>label{
+
+.wfp-multiselect .multiselect-container>li>a>label {
     display: block;
-        padding: 5px 10px 5px 15px;
+    padding: 5px 10px 5px 15px;
 }
-.wfp-multiselect .dropdown-toggle::after{
+
+.wfp-multiselect .dropdown-toggle::after {
     content: "\F0140";
     font-family: "Material Design Icons";
     border: none;
@@ -178,6 +199,7 @@ p {
     position: absolute;
     right: 3px;
 }
+
 /* Search & filters END*/
 
 /* Video sec */
@@ -1823,6 +1845,10 @@ body.compensate-for-scrollbar {
     top: -36px !important;
 }
 
+.whk-search-wrapper .w-100 {
+    max-width: 148px;
+}
+
 .wfp-vac-right-side {
     max-height: 740px;
     overflow-y: scroll;
@@ -1920,7 +1946,114 @@ body.compensate-for-scrollbar {
     color: #171717;
 }
 
+.wfp-tab-content {
+    background: #0164500F;
+}
+
+.wfp-detail-list ul {
+    padding: 0;
+    columns: 4;
+    -webkit-columns: 4;
+    -moz-columns: 4;
+}
+
+.wfp-detail-list ul li {
+    display: block;
+    padding: 5px 0;
+    font-size: 14px;
+}
+
+.wfp-detail-list ul li::before {
+    content: "\F035F";
+    font-family: "Material Design Icons";
+    font-size: 16px;
+
+}
+
+.wfp-default-bg {
+    background: #0164500F;
+}
+
+.wfp-pricing-info {}
+
 /* nav tabs information END */
+
+/* Right pricing info START*/
+.wfp-pricing-info {}
+
+.wfp-slider-cards.wfp-det-pg-em .card-text ul li {
+    font-size: 16px;
+    font-weight: 400;
+
+}
+
+.wfp-terms ul li {
+    list-style: disc;
+
+}
+
+.wfp-pet-policy ul {
+    list-style: none;
+}
+
+.wfp-pet-policy ul li .mdi {
+    font-size: 18px;
+}
+
+.wfp-social-icons ul {
+    padding: 0;
+}
+
+.wfp-social-icons ul li {
+    list-style: none;
+    display: inline-block;
+    cursor: pointer;
+    border: 1px solid #171717;
+    color: #171717;
+    border-radius: 100%;
+    height: 30px;
+    width: 30px;
+    text-align: center;
+    line-height: 30px;
+    font-size: 16px;
+    margin: 0 3px;
+    transition: all 0.3s ease;
+}
+
+.wfp-social-icons ul li:hover {
+    background: #171717;
+    color: #ffffff;
+}
+
+/* Right pricing info END */
+
+/* map START */
+.wfp-map-info .accordion>.card>.card-header {
+    padding: 0;
+    margin: 0;
+    background-color: transparent;
+    border-bottom: none;
+}
+.wfp-map-info .accordion>.card>.card-header .btn-link{
+   color: #171717;
+   text-decoration: none;
+}
+.wfp-map-info .accordion>.card>.card-header .btn-link .mdi-chevron-up{
+    transition: all 0.5s ease;
+    font-size: 18px;
+}
+.wfp-map-info .accordion>.card>.card-header .btn-link.collapsed .mdi-chevron-up{
+    transform: rotate(180deg);
+}
+.wfp-map-info .accordion>.card {
+    background-color: #f1f6f5;
+    border: 1px solid #f1f6f5;
+}
+.wfp-map-info .card-body{
+    height: 378px;
+        padding: 0 1rem 1rem;
+}
+/* map END */
 /* ------------------ listing detail Page css END --------------------*/
 
 

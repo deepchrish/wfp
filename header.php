@@ -10,6 +10,7 @@
   <link rel="stylesheet" href="css/bootstrap.min.css">
   <!-- Material design icon -->
   <link rel="stylesheet" type="text/css" href="//cdn.materialdesignicons.com/5.4.55/css/materialdesignicons.min.css" />
+  <link rel="stylesheet" type="text/css" href="//stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" />
   <link rel="stylesheet"
     href="https://cdnjs.cloudflare.com/ajax/libs/bootstrap-multiselect/0.9.13/css/bootstrap-multiselect.css">
   

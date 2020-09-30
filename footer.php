@@ -115,11 +115,10 @@
   <script type="text/javascript" src="//cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.min.js"></script>
   <script src="https://cdn.jsdelivr.net/gh/fancyapps/fancybox@3.5.7/dist/jquery.fancybox.min.js"></script>
   <script src="https://cdnjs.cloudflare.com/ajax/libs/bootstrap-multiselect/0.9.13/js/bootstrap-multiselect.js">
-  
   </script>
   <script src="js/custom.js">
   </script>
-  <script>
+  <!-- <script>
     $('.video').parent().click(function () {
       if ($(this).children(".video").get(0).paused) {
         $(this).children(".video").get(0).play();
@@ -129,7 +128,8 @@
         $(this).children(".playpause").fadeIn();
       }
     });
-  </script>
+  </script> -->
+  <!-- Slick slider STRAT -->
   <script>
     $('.responsive').slick({
       dots: true,
@@ -193,6 +193,8 @@
       ]
     });
   </script>
+  <!-- Slick slider END -->
+  <!-- Multiselect Dropdown START -->
   <script>
     $(document).ready(function () {
       $('#citylist').multiselect({
@@ -218,6 +220,42 @@
 
     });
   </script>
+  <!-- Multiselect Dropdown END -->
+  <!-- Social Share START -->
+  <script>
+    setShareLinks();
+
+    function socialWindow(url) {
+      var left = (screen.width - 570) / 2;
+      var top = (screen.height - 570) / 2;
+      var params = "menubar=no,toolbar=no,status=no,width=570,height=570,top=" + top + ",left=" + left;
+      // Setting 'params' to an empty string will launch
+      // content in a new tab or window rather than a pop-up.
+      // params = "";
+      window.open(url, "NewWindow", params);
+    }
+
+    function setShareLinks() {
+      var pageUrl = encodeURIComponent(document.URL);
+      var tweet = encodeURIComponent($("meta[property='og:description']").attr("content"));
+
+      $(".social-share.facebook").on("click", function () {
+        url = "https://www.facebook.com/sharer.php?u=" + pageUrl;
+        socialWindow(url);
+      });
+
+      $(".social-share.twitter").on("click", function () {
+        url = "https://twitter.com/intent/tweet?url=" + pageUrl + "&text=" + tweet;
+        socialWindow(url);
+      });
+
+      $(".social-share.linkedin").on("click", function () {
+        url = "https://www.linkedin.com/shareArticle?mini=true&url=" + pageUrl;
+        socialWindow(url);
+      })
+    }
+  </script>
+  <!-- Social Share END -->
 
   </body>
 

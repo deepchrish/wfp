@@ -35,7 +35,7 @@ include('header.php');
          <div class="col-md-12 py-2 ">
             <form>
                <div class="d-flex form-group justify-content-between mb-0">
-                  <div class="w-100 py-2 px-2">
+                  <div class="w-100 py-2 px-1">
                      <div class="wfp-multiselect">
                         <select id="citylist" class="form-control" multiple="multiple">
                            <option value="agoura">Agoura</option>
@@ -44,7 +44,7 @@ include('header.php');
                         </select>
                      </div>
                   </div>
-                  <div class=" w-100 py-2 px-2">
+                  <div class="w-100 py-2 px-1">
                      <div class="wfp-multiselect">
                         <select id="bedslist" class="form-control" multiple="multiple">
                            <option value="1beds">1 Bed</option>
@@ -53,7 +53,7 @@ include('header.php');
                         </select>
                      </div>
                   </div>
-                  <div class=" w-100 py-2 px-2">
+                  <div class="w-100 py-2 px-1">
                      <div class="wfp-multiselect">
                         <select id="bathlist" class="form-control" multiple="multiple">
                            <option value="1beds">1 Bath</option>
@@ -62,7 +62,7 @@ include('header.php');
                         </select>
                      </div>
                   </div>
-                  <div class=" w-100 py-2 px-2">
+                  <div class="w-100 py-2 px-1">
                      <div class="wfp-multiselect">
                         <select id="furnished" class="form-control" multiple="multiple">
                            <option value="fullyfurnished">Fully Furnished</option>
@@ -71,8 +71,7 @@ include('header.php');
                         </select>
                      </div>
                   </div>
-
-                  <div class=" w-100 py-2 px-2">
+                  <div class="w-100 py-2 px-1">
                      <div class="wfp-multiselect">
                         <select id="pets" class="form-control" multiple="multiple">
                            <option value="dogs">Dog Allowed</option>
@@ -80,7 +79,7 @@ include('header.php');
                         </select>
                      </div>
                   </div>
-                  <div class=" w-100 py-2 px-2">
+                  <div class="w-100 py-2 px-1">
                      <div class="wfp-multiselect">
                         <div class="btn-group">
                            <button type="button" class="btn btn-default dropdown-toggle" data-toggle="dropdown"
@@ -102,16 +101,16 @@ include('header.php');
                         </div>
                      </div>
                   </div>
-                  <div class=" w-100 py-2 px-2">
+                  <div class="w-100 py-2 px-1">
                      <div class="wfp-multiselect">
                         <input type="text" class="form-control" placeholder="Zip Code">
                      </div>
                   </div>
-                  <div class=" w-100 py-2 px-2">
+                  <div class="w-100 py-2 px-1">
                      <button class="btn d-block w-100 wfp-btn-primary"><i class="mdi mdi-filter"
                            aria-hidden="true"></i>Apply Filters</button>
                   </div>
-                  <div class=" w-25 py-2 px-2 d-flex align-items-center">
+                  <div class="w-25 py-2 px-1 d-flex align-items-center justify-content-center">
                      <a href="#" class="wfp-refresh" title="Clear Filters"><i class="mdi mdi-refresh-circle"
                            aria-hidden="true"></i>
                      </a>
